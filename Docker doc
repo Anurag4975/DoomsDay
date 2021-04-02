@@ -1,0 +1,27 @@
+create a folder
+open with code
+open terminal
+create a docker file "DOCKER"
+steps
+ 1. #specify the base image
+ From alpine 
+# download and install dependencies
+ Run apk add --update redis
+ 
+ #start up command 
+   CMD ["redis-server"]
+   
+   
+   run DOcker build .    in terminal 
+   
+   docker run container_id
+   
+   
+   docker commit -c'CMD"redis-server"' container_id
+   
+   
+   
+   
+ 
+   
+

@@ -1,0 +1,76 @@
+--> 6 face landmarks are used in the face recognition (left_eyebrow,   right_eyebrow,    top_lip,  bottom_lip,   left_eye,   right_eye)
+
+
+how it works 
+Find faces in the image (Face_locations)
+outlines of each person’s eyes, nose, mouth and chin.
+
+The network itself was trained by Davis King on a dataset of ~3 million images.
+
+
+The dlib library, maintained by Davis King, contains our implementation of “deep metric learning” which is used to construct our face embeddings used for the actual recognition process.
+
+
+This detector is based on histogram of oriented gradients (HOG) and linear SVM. (Explaining how this detector works is beyond the scope of this blog post
+
+
+
+
+
+
+
+Linear SVM is the newest extremely fast machine learning (data mining) algorithm for solving multiclass classification problems from ultra large data sets that implements an original proprietary version of a cutting plane algorithm for designing a linear support vector machine. LinearSVM is a linearly scalable routine meaning that it creates an SVM model in a CPU time which scales linearly with the size of the training data set. Our comparisons with other known SVM models clearly show its superior performance when high accuracy is required. We would highly appreciate if you may share LinearSVM performance on your data sets with us.
+
+
+Features
+
+•Efficiency in dealing with extra large data sets (say, several millions training data pairs),
+
+•Solution of multiclass classification problems with any number of classes,
+
+•Working with high dimensional data (thousands of features, attributes) in both sparse and dense format,
+
+•No need for expensive computing resources (personal computer is a standard platform),
+
+•Ideal for contemporary applications in digital advertisement, e-commerce, web page categorization, text classification, bioinformatics, proteomics, banking services and many other areas.
+
+
+
+
+
+
+Steps in detection 
+1.Input the image and find face_location	
+2. get the image encoding 
+3.input the image via camera and find the face_location 
+4.get the encoding 
+
+compare both the encoding 
+the minimum torelence value will generate a boolean wheather both the images are same or different (the default tolerance is 0.6). simply if any image is beyond this tolerance value while comparing then it will show false  both images didn't match
+To find the tolerance we see Face_distance value
+
+
+
+https://face-recognition.readthedocs.io/en/latest/face_recognition.html
+
+
+
+
+
+
+Learn what is tkinter 
+What is sqlite3 
+how u trained the module 
+
+
+any question ask me fast 
+
+
+
+
+
+hidden layer are convolutional layer
+detect pettern and images
+number of filter to describe
+
+
